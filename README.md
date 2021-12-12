@@ -20,7 +20,7 @@ git clone https://github.com/AAT1iresh/DS5100_Project_Covid.git
 ```
 python3 user_predict.py
 ```
-4. Once the program was run, if you would like to run it again, just repeat step 4.
+4. Once the program was run, if you would like to run it again, just repeat step 3.
 
 # Project Report 
 
