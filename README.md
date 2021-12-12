@@ -149,7 +149,7 @@ Below in Figure 11, is a portion of the code written to collect user data.  Figu
 
 
 
-	We hope that by creating this interface, we can encourage users to interact with our data, and to gain the understanding that pre-existing conditions can have a major impact on the probability of survival among COVID-19 patients.
+We hope that by creating this interface, we can encourage users to interact with our data, and to gain the understanding that pre-existing conditions can have a major impact on the probability of survival among COVID-19 patients.
 
 
 # Testing
