@@ -34,7 +34,7 @@ Our dataset was obtained from an online dataset released by the Mexican governme
 ![Alt text](fig1.png?raw=true)
 
 
-Analytical Design
+### Analytical Design
 During the exploration phase of this project, we considered many variables when trying to determine death.  The first predictor that indicated a clear relationship with death was age.  Thus, we decided to highlight this variable within our report. Below Figures 2 and 3, display the distribution of ages among covid patients as well as a stacked bar chart depicting the proportion of deaths by age.  The distribution on the left indicates a large number of patients are between 20-60 years old, however, the visualization on the right indicates the largest proportions of deaths among patients have been between 60-100 years old. Thus, the data indicates there is a heightened risk of death among older patients with COVID-19.
 
 
