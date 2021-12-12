@@ -145,8 +145,6 @@ Below in Figure 11, is a portion of the code written to collect user data.  Figu
 
 
 
-![Alt text](Figures13and14.png?raw=true)
-
 
 
 We hope that by creating this interface, we can encourage users to interact with our data, and to gain the understanding that pre-existing conditions can have a major impact on the probability of survival among COVID-19 patients.
@@ -155,7 +153,7 @@ We hope that by creating this interface, we can encourage users to interact with
 # Testing
 Unit testing was used to ensure the quality of code, and to ensure user input was successfully collected.  During testing, 14 tests were successfully run.  Each test ensured that user input value’s such as sex, age, and tobacco use would be collected correctly.  A portion of the tests and output is displayed below in figures 13 and 14.  The inputs for this specific test are a male smoker who suffers from chronic inflammatory lung disease and has been in contact with a person who has COVID-19.
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figures13and14.png?raw=true)
 
 	
 
