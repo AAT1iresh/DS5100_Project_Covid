@@ -22,14 +22,14 @@ python3 user_predict (2).py
 ```
 4. Once the program was run, if you would like to run it again, just repeat step 4.
 
-
+# Project Report 
 
 
 ### Introduction	
 As COVID-19 continues to impact the globe, it is imperative that we identify those around us who are the most vulnerable to death from the virus.  Among those most vulnerable, are patients with pre-existing conditions.  The aim of this project is to explore how pre-existing medical conditions impact COVID-19 patients in hospitals and to use our data to predict the probability of survival for a new patient. We will accomplish this by comparing mortality rates of patients with pre-existing conditions to mortality rates of patients without pre-existing conditions.  We will explore visualizations with predictors such as pneumonia and age, and we will use the data to predict the probability of survival of a new patient.  Once accomplished, we will share our knowledge in an engaging way by allowing users to explore how different medical conditions impact the probability of survival.  The contents of this project can be found on the team’s Github page.
 
 ### Data
-	Our dataset was obtained from an online dataset released by the Mexican government with 100,000+ observations.  For simplicity, we used the translated version of the data posted on kaggle. The dataset primarily consisted of information about hospitalized patients in Mexico.  Information such as age and sex was collected, as well as other information regarding medical conditions (i.e. diabete, asthma, hypertension, etc.), and whether or not the patient died during hospitalization. We chose this dataset specifically due to the abundance of information regarding patients and their pre-existing medical conditions.  The data contained a large number of categorical variables with values 0 and 1.  To process the data, we first identified and removed the null values.  We decided to remove the null values because they were not imperative in our analysis.  We also removed an unnamed column that contained our index values, and then split our dataset into training and testing components.  Below, Figure 1 illustrates the first few rows of our cleaned dataset.
+Our dataset was obtained from an online dataset released by the Mexican government with 100,000+ observations.  For simplicity, we used the translated version of the data posted on kaggle. The dataset primarily consisted of information about hospitalized patients in Mexico.  Information such as age and sex was collected, as well as other information regarding medical conditions (i.e. diabete, asthma, hypertension, etc.), and whether or not the patient died during hospitalization. We chose this dataset specifically due to the abundance of information regarding patients and their pre-existing medical conditions.  The data contained a large number of categorical variables with values 0 and 1.  To process the data, we first identified and removed the null values.  We decided to remove the null values because they were not imperative in our analysis.  We also removed an unnamed column that contained our index values, and then split our dataset into training and testing components.  Below, Figure 1 illustrates the first few rows of our cleaned dataset.
 
 ![Alt text](fig1.png?raw=true)
 
