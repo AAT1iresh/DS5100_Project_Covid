@@ -47,6 +47,7 @@ During the exploration phase of this project, we considered many variables when 
 
 
 
+
 After exploring age, a multitude of pre-existing conditions were also explored such as obesity, diabetes, asthma, pneumonia, and hypertension.  Pneumonia and diabetes both indicated a large proportion of deaths among patients.  The bar charts in figures 4 and 5 depict the relationship pneumonia and diabetes share with death respectively. 
 
 
