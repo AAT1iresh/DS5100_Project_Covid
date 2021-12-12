@@ -33,7 +33,7 @@ Our dataset was obtained from an online dataset released by the Mexican governme
 
 ![Alt text](fig1.png?raw=true)
 
-Figure 1: Header of Data
+
 Analytical Design
 During the exploration phase of this project, we considered many variables when trying to determine death.  The first predictor that indicated a clear relationship with death was age.  Thus, we decided to highlight this variable within our report. Below Figures 2 and 3, display the distribution of ages among covid patients as well as a stacked bar chart depicting the proportion of deaths by age.  The distribution on the left indicates a large number of patients are between 20-60 years old, however, the visualization on the right indicates the largest proportions of deaths among patients have been between 60-100 years old. Thus, the data indicates there is a heightened risk of death among older patients with COVID-19.
 
@@ -41,11 +41,11 @@ During the exploration phase of this project, we considered many variables when 
 
 
 
+![Alt text](fig1.png?raw=true)
 
 
 
 
-Figures 2 and 3: Distribution of Age and Survival by Age Bar Chart
 
 After exploring age, a multitude of pre-existing conditions were also explored such as obesity, diabetes, asthma, pneumonia, and hypertension.  Pneumonia and diabetes both indicated a large proportion of deaths among patients.  The bar charts in figures 4 and 5 depict the relationship pneumonia and diabetes share with death respectively. 
 
@@ -58,23 +58,25 @@ After exploring age, a multitude of pre-existing conditions were also explored s
 
 
 
+![Alt text](fig1.png?raw=true)
 
 
 
 
 
 
-Figures 4 and 5: Pneumonia and Diabetes Bar Charts
 
 In order to help predict the survival rate of a hospitalized patient that has contracted COVID, we first needed to fit a model that could do so. To this end, we explored using machine learning classifiers such as logistic regression, decision trees, and random forest models to help both predict our survival rate probability. Before fitting our models, we noticed in our preliminary exploratory data analysis that there was a significant imbalance of values within our response variable, with a large majority of our patients in the data surviving versus dying (Figure 6). 
 
-Figure 6: Distribution of Response Variable Patient Survival
+![Alt text](fig1.png?raw=true)
+
+
 
 While this is obviously preferable realistically speaking, datawise it is indicative of an imbalance dataset, one that will lead to Type II error if not addressed. Type II error can also be defined as a false negative, which in context with our project implies that a patient that is likely to die from COVID while hospitalized is predicted by our model to not die. We believe that this should be avoided, and in order to do so, we created a new dataset with the use of oversampling to duplicate rows of the minority group (patients that died) so that there were an equal number of observations for each response variable value. The benefits and impact of balancing our data can be seen below in Figure 7, with metric scores for the model trained on the balanced dataset being overall much better than the one trained on the original dataset.
 
+![Alt text](fig1.png?raw=true)
 
-Figure 7: Side by Side Comparison of ROC Curves and Metric Scores of Decision Tree Models 
-Trained by the Original Dataset (left) and Balanced Dataset (right)
+
 
 In order to determine the best overall model to help predict survival rates for our hospitalized COVID patients, we trained three classifier models (logistic regression, decision tree, random forest) on both our original dataset and our balanced dataset then compared their metric scores, specifically accuracy ((TP+TN)/(TP+FP+FN+TN)) and F1 score (2*(Recall * Precision) / (Recall + Precision), where Recall = TP/TP+FN and Precision = TP/TP+FP) (metric scores displayed below Figure 8). 
 
@@ -91,7 +93,8 @@ F1 Score
 0.2607
 0.2769
 
-Figure 8: Table of Accuracy and F1 Scores from Three Classifiers Trained on the Original Dataset
+![Alt text](fig1.png?raw=true)
+
 
 As can be seen in Figure 9 above, while the accuracy scores for all three classifiers are quite high, the F1 scores, which take into account false negatives and false positives, is very low. 
 
@@ -109,12 +112,16 @@ F1 Score
 0.9513
 0.9519
 
-Figure 9: Table of Accuracy and F1 Scores from Three Classifiers Trained on the Balanced Dataset
+![Alt text](fig1.png?raw=true)
+
+
 
 As shown in Figure 9, we can see that while there isn’t much of an improvement in the accuracy scores compared to the models trained on the original dataset, the F1 scores drastically improved, making it likely that we will be choosing one of these three models as our optimal model. After comparing the three models and their scores in the figure above, it’s clear that the random forest model trained on the balanced dataset is our best model.
 From this model, we can also glean insight into feature importance to try and determine which of our predictor variables seem to be the most influential in predicting the survival rate. Based on the results found in the figure below, it appears that patient type (whether the patient was hospitalized or simply sent home after the check up), age of patient, and whether or not the patient had pneumonia during the time were the most important predictor variables in our optimal random forest model trained on the balanced dataset.
 
-Figure 10: Feature Importance Based on Our Optimal Model
+![Alt text](fig1.png?raw=true)
+
+
 
 After completing our analysis on how pre-existing medical conditions impact patients with COVID-19. It was imperative that we shared our newfound understanding with others.  When presenting knowledge, it is important to present it in a way that is easy to comprehend and encouraging to explore.  Thus, along with our visualizations, we also chose to create a command line interface for the user to input different medical conditions and receive the probability of survival based on those inputs. This code is easily downloaded via our instructions on our github repository. We expect users to interact with this interface in at least two ways:
 
@@ -127,19 +134,19 @@ Below in Figure 11, is a portion of the code written to collect user data.  Figu
 
 
 
+![Alt text](fig1.png?raw=true)
 
 
 
 
 
-
-	        Figures 11 and 12: User Input Code and User Interface
-
+	        
 
 
 
+![Alt text](fig1.png?raw=true)
 
-Figure 12
+
 
 	We hope that by creating this interface, we can encourage users to interact with our data, and to gain the understanding that pre-existing conditions can have a major impact on the probability of survival among COVID-19 patients.
 
@@ -147,7 +154,9 @@ Figure 12
 Testing
 Unit testing was used to ensure the quality of code, and to ensure user input was successfully collected.  During testing, 14 tests were successfully run.  Each test ensured that user input value’s such as sex, age, and tobacco use would be collected correctly.  A portion of the tests and output is displayed below in figures 13 and 14.  The inputs for this specific test are a male smoker who suffers from chronic inflammatory lung disease and has been in contact with a person who has COVID-19.
 
-	Figures 13 and 14: Unit Testing Code and Output
+![Alt text](fig1.png?raw=true)
+
+	
 
 
 Beyond the Required Specifications
