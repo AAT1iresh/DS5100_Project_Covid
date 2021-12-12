@@ -16,7 +16,7 @@ Before we go into the specific steps, please make sure Python and Git as well as
 ```
 git clone https://github.com/AAT1iresh/DS5100_Project_Covid.git
 ```
-3. From this point, you can run just run the user_input.py file directly to access the CLI. For example...
+3. From this point, you can  just run the user_predict.py file directly to access the CLI. For example...
 ```
 python3 user_predict.py
 ```
