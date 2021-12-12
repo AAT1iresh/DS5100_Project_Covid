@@ -41,7 +41,7 @@ During the exploration phase of this project, we considered many variables when 
 
 
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figures2and3.png?raw=true)
 
 
 
@@ -58,7 +58,7 @@ After exploring age, a multitude of pre-existing conditions were also explored s
 
 
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figures4and5.png?raw=true)
 
 
 
@@ -68,13 +68,13 @@ After exploring age, a multitude of pre-existing conditions were also explored s
 
 In order to help predict the survival rate of a hospitalized patient that has contracted COVID, we first needed to fit a model that could do so. To this end, we explored using machine learning classifiers such as logistic regression, decision trees, and random forest models to help both predict our survival rate probability. Before fitting our models, we noticed in our preliminary exploratory data analysis that there was a significant imbalance of values within our response variable, with a large majority of our patients in the data surviving versus dying (Figure 6). 
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figure6.png?raw=true)
 
 
 
 While this is obviously preferable realistically speaking, datawise it is indicative of an imbalance dataset, one that will lead to Type II error if not addressed. Type II error can also be defined as a false negative, which in context with our project implies that a patient that is likely to die from COVID while hospitalized is predicted by our model to not die. We believe that this should be avoided, and in order to do so, we created a new dataset with the use of oversampling to duplicate rows of the minority group (patients that died) so that there were an equal number of observations for each response variable value. The benefits and impact of balancing our data can be seen below in Figure 7, with metric scores for the model trained on the balanced dataset being overall much better than the one trained on the original dataset.
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figure7.png?raw=true)
 
 
 
@@ -93,7 +93,7 @@ F1 Score
 0.2607
 0.2769
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figure8.png?raw=true)
 
 
 As can be seen in Figure 9 above, while the accuracy scores for all three classifiers are quite high, the F1 scores, which take into account false negatives and false positives, is very low. 
@@ -112,14 +112,14 @@ F1 Score
 0.9513
 0.9519
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figure9.png?raw=true)
 
 
 
 As shown in Figure 9, we can see that while there isn’t much of an improvement in the accuracy scores compared to the models trained on the original dataset, the F1 scores drastically improved, making it likely that we will be choosing one of these three models as our optimal model. After comparing the three models and their scores in the figure above, it’s clear that the random forest model trained on the balanced dataset is our best model.
 From this model, we can also glean insight into feature importance to try and determine which of our predictor variables seem to be the most influential in predicting the survival rate. Based on the results found in the figure below, it appears that patient type (whether the patient was hospitalized or simply sent home after the check up), age of patient, and whether or not the patient had pneumonia during the time were the most important predictor variables in our optimal random forest model trained on the balanced dataset.
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figure10.png?raw=true)
 
 
 
@@ -134,7 +134,7 @@ Below in Figure 11, is a portion of the code written to collect user data.  Figu
 
 
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figures11and12.png?raw=true)
 
 
 
@@ -144,7 +144,7 @@ Below in Figure 11, is a portion of the code written to collect user data.  Figu
 
 
 
-![Alt text](fig1.png?raw=true)
+![Alt text](Figures13and14.png?raw=true)
 
 
 
