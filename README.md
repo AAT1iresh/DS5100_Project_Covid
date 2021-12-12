@@ -176,7 +176,7 @@ To make the presentation of our findings impactful, a program was designed and t
 
 
 # References
-# AAT1iresh. (n.d.). AAT1IRESH/ds5100_project_covid: This repository is created to facilitate DS5100 final project. GitHub. Retrieved December 10, 2021, from https://github.com/AAT1iresh/DS5100_Project_Covid.
-# Datos Abiertos Dirección general de epidemiología - gob.mx. (n.d.). Retrieved December 10, 2021, from https://www.gob.mx/salud/documentos/datos-abiertos-152127.
-Nikalje, M. (2020, July 28). Covid-19 patient pre-condition dataset ( cleaned ). Kaggle. Retrieved December 10, 2021, from https://www.kaggle.com/madan44/covid19-patient-precondition-dataset-cleaned. 
+### AAT1iresh. (n.d.). AAT1IRESH/ds5100_project_covid: This repository is created to facilitate DS5100 final project. GitHub. Retrieved December 10, 2021, from https://github.com/AAT1iresh/DS5100_Project_Covid.
+### Datos Abiertos Dirección general de epidemiología - gob.mx. (n.d.). Retrieved December 10, 2021, from https://www.gob.mx/salud/documentos/datos-abiertos-152127.
+### Nikalje, M. (2020, July 28). Covid-19 patient pre-condition dataset ( cleaned ). Kaggle. Retrieved December 10, 2021, from https://www.kaggle.com/madan44/covid19-patient-precondition-dataset-cleaned. 
 
